@@ -1,9 +1,12 @@
 import React from 'react'
+import useCounterStore from '../../../store/counterStore'
 import CounterBtn from './CounterBtn'
 
 const IncreaseBtn = () => {
+  const increment = useCounterStore((state) => state.increment);
+  console.log('increase')
   return (
-    <CounterBtn label="+" handle={() => {console.log("Increase")}} />
+    <CounterBtn label="+" handle={increment} />
   )
 }
 

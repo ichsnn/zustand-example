@@ -1,6 +1,7 @@
 import CounterView from "./views/counter";
 
 function App() {
+  console.log('root')
   return (
     <div>
       <CounterView />
